@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Todo List APP test</title>
+        <title>My Todo List</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                color: #333;
+                background-color: #e9f5f5;
+                color: #222;
                 margin: 0;
                 padding: 0;
             }
 
             h1 {
-                background-color: #4CAF50;
+                background-color: #008080;
                 color: white;
                 margin: 0;
                 padding: 20px;
@@ -25,8 +25,8 @@
             }
 
             ul li {
-                background: #fff;
-                border: 1px solid #ddd;
+                background: #ffffff;
+                border: 1px solid #cfd8dc;
                 margin-bottom: 10px;
                 padding: 10px;
                 position: relative;
@@ -39,25 +39,25 @@
             }
 
             ul li a:hover {
-                color: #4CAF50;
+                color: #008080;
             }
 
             .delete-btn {
-                color: red;
+                color: #e53935;
                 position: absolute;
                 right: 10px;
                 top: 10px;
             }
 
             .edit-btn {
-                color: #FFC107;
+                color: #fbc02d;
                 position: absolute;
                 right: 40px;
                 top: 10px;
             }
 
             form {
-                background: #fff;
+                background: #ffffff;
                 padding: 20px;
                 margin-top: 20px;
             }
@@ -65,31 +65,33 @@
             label {
                 display: block;
                 margin-bottom: 10px;
+                font-weight: bold;
             }
 
             input[type="text"] {
                 width: 100%;
                 padding: 10px;
                 margin-bottom: 10px;
-                border: 1px solid #ddd;
+                border: 1px solid #b0bec5;
             }
 
             input[type="submit"] {
-                background-color: #4CAF50;
+                background-color: #008080;
                 color: white;
                 border: none;
                 padding: 10px 20px;
                 cursor: pointer;
+                font-weight: bold;
             }
 
             input[type="submit"]:hover {
-                background-color: #45a049;
+                background-color: #006666;
             }
         </style>
     </head>
 
     <body>
-        <h1>Hello Junoon Batch 8 (Jenkins), Write your plan on Learning Jenkins</h1>
+        <h1>My Todo List</h1>
         <ul>
             <% todolist.forEach(function(todo, index) { %>
             <li>
